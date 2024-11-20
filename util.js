@@ -70,3 +70,50 @@ function checkPrimesInRange(min, max) {
 
 // Call the function for the range [10, 20]
 checkPrimesInRange(10, 20);
+
+
+///////////////////////////////////////////////////////////
+//Counter with closures
+
+function createCounter() {
+    let count = 0; // This is the private variable enclosed in the closure
+
+    return {
+        increment: function() {
+            count++;
+            return count;
+        },
+        decrement: function() {
+            count--;
+            return count;
+        },
+        getCount: function() {
+            return count;
+        }
+    };
+}
+
+// Usage
+const counter = createCounter();
+
+console.log(counter.increment()); // Output: 1
+console.log(counter.increment()); // Output: 2
+console.log(counter.getCount());  // Output: 2
+console.log(counter.decrement()); // Output: 1
+console.log(counter.getCount());  // Output: 1
+
+///////////////////////////////////////////////////////////
+// How to Check if Two Strings Are Anagrams in JavaScript:
+
+function areAnagrams(str1, str2) {
+    // Remove non-alphabetic characters and convert to lowercase
+    const formatStr = (str) => str.replace(/\s+/g, '').toLowerCase().split('').sort().join('');
+
+    return formatStr(str1) === formatStr(str2);
+}
+
+// Example usage
+console.log(areAnagrams('listen', 'silent')); // Output: true
+console.log(areAnagrams('hello', 'world'));   // Output: false
+console.log(areAnagrams('rail safety', 'fairy tales')); // Output: true
+console.log(areAnagrams('Hi there', 'Bye there')); // Output: false

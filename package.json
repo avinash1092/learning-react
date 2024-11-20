@@ -1,0 +1,31 @@
+{
+  "name": "react-project",
+  "version": "1.0.0",
+  "description": "This is the learning project of react",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avinash1092/learning-react.git"
+  },
+  "keywords": [],
+  "author": "Avinash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avinash1092/learning-react/issues"
+  },
+  "homepage": "https://github.com/avinash1092/learning-react#readme",
+  "devDependencies": {
+    "parcel": "^2.13.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
